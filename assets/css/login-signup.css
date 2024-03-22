@@ -1,0 +1,335 @@
+header{
+    width: 100%;
+    background: #fff;
+}
+
+nav{
+    width: 100%;
+    max-width: 80%;
+    height: 85px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: #ee4d2d;
+}
+.logo a.nav__logo{
+font-size:30px;
+}
+.logo a.nav__logo i{
+    font-size: 40px;
+}
+span.title{
+    font-size:25px;
+    color: #333;
+    padding-left: 10px;
+}
+nav a.nav__help{
+    font-size: 15px;
+}
+
+#content{
+    width: 100%;
+    height: 600px;
+    background: rgb(238, 77, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.form__login{
+    position: absolute;
+    right: 240px;
+    width: 420px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0,0.5 );
+    padding: 30px 20px;
+}
+
+.form__login h2{
+    font-size: 25px;
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+.input__box{
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.input__box input{
+    flex: 1;
+    height: 40px;
+    padding: 5px 15px;
+    border: 1px solid #33333342;
+    outline-color:#33333395;
+    border-radius: 2px;
+}
+
+/* .error{
+    background: #fff6f7;
+    border: 1px solid red;
+} */
+
+.error-message-all{
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid rgba(255, 66, 79, .2);
+    background: #fff9fa;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.error-message-all div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-message-all div i{
+    color: red;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+.error-message-all div p{
+    font-size: 15px;
+    color: #333333d7;
+    text-align: justify;
+}
+
+
+
+.error-message-repeat__pass{
+    position: absolute;
+    font-size: 13px;
+    padding:2px;
+    color: red;
+    bottom: -20px;
+    left: 0;
+}
+
+.error-message-pass{
+    position: absolute;
+    font-size: 13px;
+    padding:2px;
+    color: red;
+    bottom: -20px;
+    left: 0;
+}
+
+.error-message-name{
+    position: absolute;
+    font-size: 13px;
+    padding:2px;
+    color: red;
+    bottom: -20px;
+    left: 0;
+}
+
+
+img.eye__pass{
+    position: absolute;
+    right: 10px;
+    width: 25px;
+    cursor: pointer;
+}
+
+img.eye__pass-2{
+    position: absolute;
+    right: 10px;
+    width: 25px;
+    cursor: pointer;
+}
+
+button.submit{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    background: #ee4d2d;
+    color: #eee;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+a.forgot-password{
+    color: #05a;
+    font-size: 13px;
+}
+
+.space{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.space span{
+    text-transform: uppercase;
+    color: #33333342;
+    font-size: 14px;
+}
+
+.space__left{
+    width: 40%;
+    height: 1px;
+    border: 0;
+    background: #33333342;
+}
+
+.space__right{
+    width: 40%;
+    height: 1px;
+    border: 0;
+    background: #33333342;
+}
+
+.button__or__login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button__or__login button {
+    flex-basis: 48%;
+    padding: 8px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #33333342;
+    outline: 0;
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.button__or__login button img{
+    width: 32px;
+    padding-right: 8px;
+}
+
+.form__login p{
+    font-size: 15px;
+    text-align: center;
+    color: #33333342;
+}
+
+.form__login p a{
+    color: #ee4d2d;
+}
+
+::placeholder{
+    color: #333333ac;
+}
+
+
+
+/* Footer */
+
+.footer__content{
+    width: 100%;
+    max-width: 80%;
+    margin: 50px auto;
+    min-height: 200px;
+}
+
+ul.content__all{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+li.content__all-li{
+    flex-basis: 18%;
+    font-size: 15px;
+    color: #333;
+}
+
+ul.content__all-list{
+    margin-top: 20px;
+}
+
+li.content__all-item{
+    color: #33333383;
+    line-height: 30px;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content__all-item i.fa-facebook{
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+.content__all-item i.fa-square-instagram{
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.content__all-item span:hover{
+    color: #ee4d2d;
+    cursor: pointer;
+}
+
+li.content__all-item.hover__color:hover{
+    color: #ee4d2d;
+    cursor: pointer;
+
+}
+
+.item-img{
+    width: 60px;
+    height: 30px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0,0.5 );
+    margin: 5px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-app{
+    display: flex;
+    justify-content: space-between;
+}
+
+img.qr{
+    flex-basis: 45%;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0,0.5 );
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.app__download{
+    flex-basis: 45%;
+}
+.app__download img{
+    width: 80px;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0,0.5 );
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.fw-550{
+    font-weight: bold;
+}

@@ -1,0 +1,10 @@
+
+<!-- 
+    - Fix lỗi slider -> chuyển động chưa mượt lắm
+    - Thay ảnh 
+        - flas sale --> xong
+        - sản phẩm -->
+    - Làm nút xem thêm -->
+    - Sửa lại hover của sản phẩm cho đẹp --> đã sửa danh mục
+    - Bộ đếm ngược time out flash sale -->
+ -->

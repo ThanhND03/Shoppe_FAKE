@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="shortcut icon" href="../assets/img/logo-titles.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/login-signup.css">
+    <!-- end css -->
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Google -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- font-awesome -->
+
+    <!-- Font -->
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a class="nav__logo" href="../index.html"><i class="fa-brands fa-shopify"></i> <span>Shoppe</span></a>
+                    <span class="title">Đăng nhập</span>
+                </div>
+
+                <a href="#" class="nav__help">Bạn cần giúp đỡ ?</a>
+            </nav>
+        </header>
+        <div id="content">
+            <img src="../assets/img/bg-login.png" class="content__img">
+
+            <form class="form__login">
+                <h2>Đăng nhập</h2>
+
+                <div class="error-message-all">
+                    <div>
+                        <i class="fa-solid fa-circle-xmark"></i>
+                        <p>Tên tài khoản của bạn hoặc mật khẩu không đúng , vui lòng thử lại !!!</p>
+                    </div>
+                </div>
+
+                <div class="input__box">
+                    <input type="text" name="fullname" id="fullname" class="input__items" placeholder="Email/Tên đăng nhập" onkeyup="validateName()">
+                    <span class="error-message-name"></span>
+                </div>
+
+                <div class="input__box">
+                    <input type="password" name="password" id="password" class="input__items" placeholder="Mật khẩu" onkeyup="validatePass()">
+                    <img class="eye__pass" src="../assets/img/eye-close.png">
+                    <span class="error-message-pass"></span>
+                </div>
+
+                <button class="submit" type="submit" onclick="return validateFormLogin()" >ĐĂNG NHẬP</button>
+
+                <a class="forgot-password" href="#">Quên mật khẩu</a>
+
+                <div class="space">
+                    <hr class="space__left">
+                    <span>Hoặc</span>
+                    <hr class="space__right">
+                </div>
+
+                <div class="button__or__login">
+                    <button class="btn__facebook">
+                        <img  src="../assets/img/facebook_logo_icon_147291.png">
+                        Facebook
+                    </button>
+                    <button class="btn__google">
+                        <img src="../assets/img/google_icon-icons.com_62736.png">
+                        Google
+                    </button>
+                </div>
+
+                <p>Bạn mới biết đến Shopee ? <a href="signup.html">Đăng ký</a> </p>
+            </form>
+        </div>
+        <footer>
+            <div class="footer__content">
+                <ul class="content__all">
+                    <li class="content__all-li">
+                        <span class="fw-550">CHĂM SÓC KHÁCH HÀNG</span>
+                        <ul class="content__all-list">
+                            <li class="content__all-item hover__color">Trung tâm trợ giúp</li>
+                            <li class="content__all-item hover__color">Hướng đãn mua hàng</li>
+                            <li class="content__all-item hover__color">Hướng dẫn bán hàng</li>
+                            <li class="content__all-item hover__color">Thanh toán</li>
+                            <li class="content__all-item hover__color">Trả hàng & hoàn tiền</li>
+                            <li class="content__all-item hover__color">Chăm sóc khách hàng</li>
+                        </ul>
+                    </li>
+                    <li class="content__all-li">
+                        <span class="fw-550">THANH TOÁN</span>
+                        <ul class="content__all-list">
+                            <li class="content__all-item">
+                                <div class="item-img"><img src="../assets/img/visa.png"></div>
+                                <div class="item-img"><img src="../assets/img/ba cham.png"></div>
+                                <div class="item-img"><img src="../assets/img/jcb.png"></div>
+                                <div class="item-img"><img src="../assets/img/american.png"></div>
+                                <div class="item-img"><img src="../assets/img/tragop.png"></div>
+                                <div class="item-img"><img src="../assets/img/slater.png"></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content__all-li">
+                        <span class="fw-550">ĐƠN VỊ VẬN CHUYỂN</span>  
+                        <ul class="content__all-list">
+                            <li class="content__all-item">
+                                <div class="item-img"><img src="../assets/img/spx.png"></div>
+                                <div class="item-img"><img src="../assets/img/viettel.png"></div>
+                                <div class="item-img"><img src="../assets/img/j&t.png"></div>
+                                <div class="item-img"><img src="../assets/img/be.png"></div>
+                                <div class="item-img"><img src="../assets/img/best.png"></div>
+                                <div class="item-img"><img src="../assets/img/ninja.png"></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content__all-li">
+                        <span class="fw-550">THEO DÕI CHÚNG TÔI TRÊN</span> 
+                        <ul class="content__all-list">
+                            <li class="content__all-item">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Facebook</span>
+                            </li>
+
+                            <li class="content__all-item">
+                                <i class="fa-brands fa-square-instagram"></i>
+                                <span>Instagram</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content__all-li">
+                        <span class="fw-550">TẢI ỨNG DỤNG</span>
+                        <ul class="content__all-list">
+                            <li class="content__all-item">
+                                <div class="qr-app">
+                                    <img src="../assets/img/qr-codes.png" class="qr">
+                                    <div class="app__download">
+                                        <img src="../assets/img/appstore.png">
+                                        <img src="../assets/img/Chplay.png">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- script -->
+
+    <script src="../assets/js/login-signup.js"></script>
+
+</body>
+</html>
