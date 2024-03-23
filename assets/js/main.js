@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const slides = document.querySelectorAll('.item__slider');
     const prevBtn = document.querySelector('#prev');
     const nextBtn = document.querySelector('#next');
-    const dotsContainer = document.querySelector('.dots-container');
-    const slideCount = slides.length;
+    let dotsContainer = $('.dots-container');
+    let slideCount = slides.length;
     let currentIndex = 0;
 
     // Function to update slider position
@@ -98,5 +98,34 @@ btnPrev.addEventListener("click", () =>{
     scrollContainer.scrollLeft -= 1160;
 });
 
+
+
 // End Galery
 
+
+// time out 
+    var countDownTime = new Date("April 09 , 2024 22:00:00").getTime();
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownTime - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));        
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60 )) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60 )) / 1000);
+
+        $('#hours').innerHTML = (hours < 10 ? "0" : "") + hours;
+        $('#minutes').innerHTML = (minutes < 10 ? "0" : "") + minutes;
+        $('#seconds').innerHTML = (seconds < 10 ? "0" : "") + seconds;
+
+
+        if(distance < 0) {
+            clearInterval(x);
+            $('#hours').innerHTML = "00";
+            $('#minutes').innerHTML = "00";
+            $('#seconds').innerHTML = "00";
+        }
+    }, 1000);
+// end time out 
+
+//  Xem them
