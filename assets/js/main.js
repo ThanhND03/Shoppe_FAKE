@@ -128,4 +128,51 @@ btnPrev.addEventListener("click", () =>{
     }, 1000);
 // end time out 
 
-//  Xem them
+//  product index
+
+//  get datas from product
+
+let products = null;
+fetch('assets/js/product.json')
+.then(response => response.json())
+.then(data => {
+    products = data;
+    console.log(products);
+    addDatatoHTML();
+})
+
+// add data product to html
+
+let product__list = $('.product__list');
+function addDatatoHTML() {
+    products.forEach(product => {
+        //  create new element item
+        let product__item = document.createElement('li');
+        product__item.classList.add('product__item')
+        let newProduct = document.createElement('a');
+        newProduct.href = '../html/detail.html?id=' + product.id;
+
+        newProduct.innerHTML = `
+        <div class="img__product">
+            <img src="../assets${product.icon__yeuthich}" class="icon_yeuthich">
+            <img src="../assets${product.imgage__background}" class="img__bg" style="background-image: url(../assets${product.image__product});">
+        </div>
+        
+        <div class="text__product">
+            <p class="title__product">${product.name}</p>
+            <p class = "product__bestseller">Đang bán chạy</p>
+            <div class="price__luotban__product">
+                <div class="price"><span>₫</span>${product.price}</div>
+                <div class="luotban">Đã bán ${product.luotban}k</div>
+            </div>
+        </div>
+        `
+
+        // add this element in product__list class
+        // appendChild để cho class này nằm trong class mình muốn
+        product__list.appendChild(product__item);
+        product__item.appendChild(newProduct);
+    }) 
+}
+// end product
+

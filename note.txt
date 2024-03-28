@@ -3,8 +3,11 @@
     - Fix lỗi slider -> Xong
     - Thay ảnh 
         - flas sale --> xong
-        - sản phẩm -->
-    - Làm nút xem thêm -->
-    - Sửa lại hover của sản phẩm cho đẹp --> đã sửa danh mục
+        - sản phẩm --> Xong
+    - Làm nút xem thêm --> Xong
+    - Sửa lại hover của sản phẩm cho đẹp --> Xong
     - Bộ đếm ngược time out flash sale --> Xong
+    - Phân trang --> Xong
+    - Chi tiết sản phẩm --> Xong
+    - Thêm vào giỏ hàng -->
  -->

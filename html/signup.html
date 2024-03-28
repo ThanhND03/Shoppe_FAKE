@@ -162,6 +162,18 @@
     <!-- script -->
 
     <script src="../assets/js/login-signup.js"></script>
+    <script>
+    let eye__pass2 = $('.eye__pass-2');
+    eye__pass2.onclick = function() {
+        if(repeat__pass.type == "password"){
+            repeat__pass.type = "text";
+            eye__pass2.src = "../assets/img/eye-open.png";
+        }else {
+        repeat__pass.type = "password";
+        eye__pass2.src = "../assets/img/eye-close.png"; 
+        }
+    }
+    </script>
 </body>
 </html>
 
